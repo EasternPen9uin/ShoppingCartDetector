@@ -31,7 +31,8 @@ https://drive.google.com/drive/folders/1jGkT2vGaieE7pOCnmoDCGUxnirFFtjdN?usp=sha
 
 
 아래는 소스코드 관련 설명입니다:
-/models : 
+
+* /models : 
   Pytorch로 학습된 쇼핑카트 이미지 검출 모델 파일 및 테스트 결과를 모아놓은 폴더입니다.
   각 모델 파일은 Model(숫자)_(사용된 optimizer 설정).pt 형식의 이름으로 되어있으며,
   Model1_SGD와 Model2_Adam_ruined의 경우 lr0을 0.01로, Model3_Adam과 Model4_AdamW의 경우 
@@ -41,7 +42,7 @@ https://drive.google.com/drive/folders/1jGkT2vGaieE7pOCnmoDCGUxnirFFtjdN?usp=sha
   best_validation.csv, best_test.csv파일은 각 모델의 최종결과물(best.pt) 4개를 val.py를
   사용하여 validation set과 test set에 각각 평가하여 나온 결과를 기록한 파일입니다.
   
-/used_to_make_datasets : 
+* /used_to_make_datasets : 
   데이터셋을 만들 때 사용한 파이썬 코드를 모아놓은 폴더입니다. 
   1_img_to_jpg.py : 
     폴더 안에 있는 이미지 파일을 모두 jpg파일로 바꾸는 코드입니다.
@@ -54,22 +55,22 @@ https://drive.google.com/drive/folders/1jGkT2vGaieE7pOCnmoDCGUxnirFFtjdN?usp=sha
     이미지를 imgaug 라이브러리를 활용하여 증강시키는 코드입니다.
 	실행하려면 imgaug 라이브러리의 설치가 필요합니다.
 	
-/alert.wav :
+* /alert.wav :
   파이썬 gtts 라이브러리로 생성한 경고음 사운드입니다.
   
-/detect_from_video.py : 
+* /detect_from_video.py : 
   동영상 파일에서 쇼핑카트가 등장하는 부분만 10초 단위로 분할하여 저장하는 프로그램입니다.
   실행하려면 opencv라이브러리와 pytorch 라이브러리, 그리고 ultralytics라이브러리가 필요하며,
   코드와 같은 폴더 내에 ffmpeg.exe 파일, 그리고 쇼핑카트 모델 파일이 필요합니다. 
   
-/detect_from_video.py : 
+* /detect_from_video.py : 
   웹캠을 사용해 영상을 10초 단위로 녹화시키면서 쇼핑카트가 감지되었을 경우 경보음을 
   재생시키는 프로그램입니다. 쇼핑카트가 나온 구간만 녹화시킬지 말지 설정 가능하며, 기본값은 
   쇼핑카트 영역만 저장하도록 되어있습니다.
   실행하려면 opencv라이브러리와 pytorch 라이브러리, 그리고 ultralytics라이브러리가 필요하며,
   코드와 같은 폴더 내에 쇼핑카트 모델 파일과 경고음 파일이 필요합니다.
   
-/shoppingcart_model.pt : 
+* /shoppingcart_model.pt : 
   YOLOv5 쇼핑카트 모델입니다. /models/Model1_SGD.pt 파일과 동일한 파일입니다.
   
 아래는 데이터셋 관련 설명입니다. 
