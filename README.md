@@ -1,4 +1,8 @@
 # ShoppingCartDetector
+
+아래 사이트를 참고해주십시오.
+노션 주소 : https://swamp-country-c8e.notion.site/OpenCV-5bff4577d0574c8d8474035c11202824
+
 2023학년도 1학기 한양대학교 AI-X:딥러닝 과목 팀 프로젝트인 "OpenCV, YOLOv5를 이용한 쇼핑카트 도난 방지 시스템"의 
 소스코드 및 결과물로서의 프로그램의 압축파일입니다.
 코드는 파이썬으로 작성되었으며 일부 프로그램 내에서 ffmpeg 6.0-essentials_build (https://github.com/GyanD/codexffmpeg)
