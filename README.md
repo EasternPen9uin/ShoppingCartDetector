@@ -31,7 +31,7 @@ https://drive.google.com/drive/folders/1jGkT2vGaieE7pOCnmoDCGUxnirFFtjdN?usp=sha
   웹캠을 사용해 영상을 10초 단위로 녹화시키면서 쇼핑카트가 감지되었을 경우 경보음을 
   재생시키는 프로그램입니다. 쇼핑카트가 나온 구간만 녹화시킬지 말지 설정 가능하며, 기본값은 
   쇼핑카트 영역만 저장하도록 되어있습니다. (설정 변경하려면 detect_from_webcam.py 파일 내 
-  설정을 바꾸면 됩니다.)
+  설정을 바꾸면 됩니다.) 프로그램을 종료하려면 Q키 또는 ESC키를 누르면 됩니다.
 
 
 아래는 소스코드 관련 설명입니다:
